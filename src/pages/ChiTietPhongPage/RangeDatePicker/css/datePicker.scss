@@ -1,0 +1,30 @@
+@tailwind components;
+
+@layer components {
+    .ant-picker.ant-picker-range.date-picker-custom {
+        @apply border-none;
+        @apply cursor-pointer;
+        @apply px-0 py-2;
+        @apply bg-transparent;
+    }
+    .ant-picker.ant-picker-range.date-picker-custom.ant-picker-focused {
+        @apply shadow-none;
+    }
+
+    .date-picker-custom {
+        @apply w-full;
+        @apply bg-transparent outline-none border-none;
+        .ant-picker-input > input {
+            @apply pl-4;
+        }
+        .ant-picker-suffix {
+            @apply hidden;
+        }
+        .ant-picker-range-separator {
+            @apply hidden;
+        }
+        .ant-picker-active-bar {
+            @apply hidden;
+        }
+    }
+}

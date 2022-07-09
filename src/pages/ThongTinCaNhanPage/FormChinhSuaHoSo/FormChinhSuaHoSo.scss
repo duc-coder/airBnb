@@ -1,0 +1,49 @@
+@tailwind components;
+
+@layer components {
+    .main-div {
+        .ant-form-vertical .ant-form-item-label {
+            label {
+                @apply text-base my-auto;
+            };
+        };
+        .ant-input, .ant-input-password {
+            @apply rounded-xl;
+        };
+        .ant-input:hover {
+            @apply border-inherit;
+        };
+        .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+            @apply border-inherit;
+        };
+        .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused {
+            @apply border border-rose-400;
+            @apply shadow-none;
+        };
+        .ant-input:focus, .ant-input-focused {
+            @apply border border-rose-400;
+            @apply shadow-none;
+        };
+        .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+            @apply rounded-xl;
+            &:hover {
+                @apply border-inherit;
+            };
+        };
+        .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+            @apply border border-rose-400;
+            @apply shadow-none;
+        };
+        .ant-picker {
+            @apply rounded-xl;
+            &:hover {
+                @apply border-inherit;
+                @apply shadow-none;
+            };
+        };
+        .ant-picker-focused {
+            @apply border border-rose-400;
+            @apply shadow-none;
+        };
+    };
+};

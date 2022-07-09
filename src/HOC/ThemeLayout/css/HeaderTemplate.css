@@ -1,0 +1,57 @@
+.header {
+  font-family: 'Roboto', sans-serif;
+}
+
+@tailwind components;
+@layer components {
+  .header .header-container .search-bar-container .ant-tabs-nav::before {
+    @apply border-b-0;
+  }
+  .header .header-container .search-bar-container .ant-tabs-tab .ant-tabs-tab-btn {
+    @apply text-lg;
+    @apply text-rose-500;
+  }
+  .header .header-container .search-bar-container .ant-tabs-tab .ant-tabs-tab-btn:hover {
+    @apply text-rose-300;
+  }
+  .header .header-container .search-bar-container .ant-tabs-ink-bar {
+    @apply bg-rose-500;
+  }
+  .header .header-container .search-bar-container .search-bar-inner .location-input-block::after {
+    @apply bg-red-400 shadow-lg;
+  }
+  .header .header-container .search-bar-container .search-bar-inner .location-input-block:hover {
+    @apply bg-gray-200;
+  }
+  .header .header-container .search-bar-container .search-bar-inner .date-input-block .ant-picker-focused {
+    @apply shadow-none;
+  }
+  .header .header-container .search-bar-container .search-bar-inner .date-input-block .date-picker-container {
+    @apply w-full h-16;
+    @apply absolute bottom-0 z-10;
+    @apply bg-transparent outline-none border-none;
+    @apply cursor-pointer;
+  }
+  .header .header-container .search-bar-container .search-bar-inner .date-input-block .date-picker-container input {
+    @apply h-16 w-full;
+    @apply rounded-full;
+    @apply cursor-pointer;
+    @apply text-center pt-5;
+  }
+  .header .header-container .search-bar-container .search-bar-inner .date-input-block .date-picker-container input:hover {
+    @apply bg-gray-200;
+  }
+  .header .header-container .search-bar-container .search-bar-inner .date-input-block .date-picker-container .ant-picker-suffix {
+    @apply hidden;
+  }
+  .header .header-container .search-bar-container .search-bar-inner .date-input-block .date-picker-container .ant-picker-range-separator {
+    @apply hidden;
+  }
+  .header .header-container .search-bar-container .search-bar-inner .date-input-block .date-picker-container .ant-picker-active-bar {
+    @apply hidden;
+  }
+  .ant-popover-inner .ant-popover-inner-content .ant-menu .ant-menu-item .-title-content a:hover {
+    @apply text-black;
+  }
+}
+/*# sourceMappingURL=HeaderTemplate.css.map */

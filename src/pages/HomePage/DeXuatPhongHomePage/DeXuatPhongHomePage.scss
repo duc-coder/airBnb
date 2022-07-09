@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+    .main-page {
+        .ant-tabs {
+            .ant-tabs-nav-wrap {
+                @apply overflow-x-scroll;
+            };
+        };
+    };
+};

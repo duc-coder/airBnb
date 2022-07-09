@@ -1,0 +1,9 @@
+.footer {
+    font-family: 'Roboto', sans-serif;
+};
+
+@tailwind components;
+
+@layer components {
+    .footer {};
+};

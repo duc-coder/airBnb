@@ -1,0 +1,20 @@
+.homepage {
+    font-family: 'Roboto', sans-serif;
+};
+
+@tailwind components;
+
+@layer components {
+    .homepage {
+        .banner-slider-container {
+            .slick-dots {
+                @apply mb-10;
+                li {
+                    button::before {
+                        @apply text-base text-white;
+                    };
+                };
+            };
+        };
+    };
+};
