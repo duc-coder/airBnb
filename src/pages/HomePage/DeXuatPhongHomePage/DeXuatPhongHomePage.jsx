@@ -47,7 +47,10 @@ export default function DeXuatPhongHomePage(props) {
                 />
                 <div className="w-full flex items-center">
                     <button
-                        className="px-5 py-2 mt-2 mx-auto rounded-lg bg-rose-500 text-white text-base active:scale-95"
+                        className="mx-auto rounded-lg bg-rose-500 text-white text-base active:scale-95
+                        lg:px-5 lg:py-2
+                        md:px-5 md:py-2
+                        px-3 py-1"
                         onClick={() => { navigate(`/search/${item._id}`) }}
                     >
                         Xem tất cả
@@ -58,8 +61,8 @@ export default function DeXuatPhongHomePage(props) {
     };
 
     return (
-        <div className="main-page w-full mt-10 pb-5">
-            <h1 className="w-11/12 mx-auto text-2xl text-center">Những chỗ nghỉ nổi bật khuyến nghị cho bạn</h1>
+        <div className="main-page w-full lg:mt-10 lg:pb-5 mt-5 md:mt-6">
+            <h1 className="lg:w-11/12 lg:text-2xl md:text-2xl text-base mx-auto text-center">Những chỗ nghỉ nổi bật khuyến nghị cho bạn</h1>
             <Tabs defaultActiveKey="1" centered>
                 {renderTabPane()}
             </Tabs>

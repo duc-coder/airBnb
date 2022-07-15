@@ -4,7 +4,7 @@ import { useFormik } from 'formik';
 import styles from '../css/FormChinhSuaHoSo.css';
 import moment from 'moment';
 import { useDispatch } from 'react-redux';
-import { anFormChinhSuaHoSo, editThongTinNguoiDung } from '../../../redux/nguoiDungSlice';
+import { anFormChinhSuaHoSo } from '../../../redux/nguoiDungSlice';
 
 const dateFormat = 'DD/MM/YYYY';
 
@@ -23,11 +23,6 @@ export default function FormChinhSuaHoSo(props) {
             phone: thongTinNguoiDung.phone,
             type: null,
         },
-        // onSubmit: values => {
-        //     console.log(values);
-        //     dispatch(editThongTinNguoiDung(thongTinNguoiDung._id, formik.values))
-        //     dispatch(anFormChinhSuaHoSo());
-        // },
     });
 
     let dispatch = useDispatch();
@@ -36,16 +31,6 @@ export default function FormChinhSuaHoSo(props) {
         dispatch(anFormChinhSuaHoSo());
         window.scrollTo(0, 0);
     };
-
-    // const handleDatePicker = (value) => {
-    //     console.log(value);
-    //     formik.setFieldValue('birthday', value);
-    // };
-
-    // const handleChangeGender = (value) => {
-    //     console.log(value);
-    //     formik.setFieldValue('gender', value);
-    // };
 
     return (
         <div className='main-div'>
@@ -112,7 +97,6 @@ export default function FormChinhSuaHoSo(props) {
                         className='w-60'
                         name='birthday'
                         format={dateFormat}
-                        // onChange={handleDatePicker}
                         value={moment(formik.values.birthday)}
                     />
                 </Form.Item>

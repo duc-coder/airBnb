@@ -1,0 +1,59 @@
+@tailwind components;
+@layer components {
+  .search-form-main .ant-tabs-nav::before {
+    @apply border-transparent;
+  }
+  .search-form-main .ant-tabs-tab .ant-tabs-tab-btn {
+    @apply text-lg;
+    @apply text-rose-500;
+  }
+  .search-form-main .ant-tabs-tab .ant-tabs-tab-btn:hover {
+    @apply text-rose-300;
+  }
+  .search-form-main .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    @apply text-rose-500;
+  }
+  .search-form-main .ant-tabs-ink-bar {
+    @apply bg-rose-500;
+  }
+  .search-form-main .search-bar-inner .location-input-block::after {
+    @apply bg-red-400 shadow-lg;
+  }
+  .search-form-main .search-bar-inner .location-input-block:hover {
+    @apply lg:bg-gray-200;
+    @apply md:bg-gray-200;
+  }
+  .search-form-main .search-bar-inner .date-input-block .ant-picker-focused {
+    @apply shadow-none;
+  }
+  .search-form-main .search-bar-inner .date-input-block .date-picker-container {
+    @apply w-full z-10;
+    @apply lg:h-16 md:h-16;
+    @apply lg:absolute lg:bottom-0;
+    @apply md:absolute md:bottom-0;
+    @apply bg-transparent outline-none border-none;
+    @apply cursor-pointer;
+  }
+  .search-form-main .search-bar-inner .date-input-block .date-picker-container input {
+    @apply border-solid border border-gray-200 rounded-full mx-2 h-12 w-full text-center cursor-pointer;
+    @apply lg:h-16 lg:rounded-full lg:pt-9 lg:border-none lg:mx-0;
+    @apply md:h-16 md:rounded-full md:pt-7 md:border-none md:mx-0;
+  }
+  .search-form-main .search-bar-inner .date-input-block .date-picker-container input:hover {
+    @apply lg:bg-gray-200;
+    @apply md:bg-gray-200;
+  }
+  .search-form-main .search-bar-inner .date-input-block .date-picker-container .ant-picker-suffix {
+    @apply hidden;
+  }
+  .search-form-main .search-bar-inner .date-input-block .date-picker-container .ant-picker-range-separator {
+    @apply hidden;
+  }
+  .search-form-main .search-bar-inner .date-input-block .date-picker-container .ant-picker-active-bar {
+    @apply hidden;
+  }
+  .ant-popover-inner .ant-popover-inner-content .ant-menu .ant-menu-item .-title-content a:hover {
+    @apply text-black;
+  }
+}
+/*# sourceMappingURL=SearchForm.css.map */

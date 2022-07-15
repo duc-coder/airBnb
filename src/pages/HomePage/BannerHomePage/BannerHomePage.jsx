@@ -15,16 +15,6 @@ export default function BannerHomePage() {
         },
     ];
 
-    const customSlider = React.createRef();
-
-    const goToNext = () => {
-        customSlider.current.slickNext();
-    };
-
-    const goToPrevious = () => {
-        customSlider.current.slickPrev();
-    };
-
     const SliderSettings = {
         dots: true,
         infinite: true,
@@ -42,7 +32,7 @@ export default function BannerHomePage() {
                 key={index}
                 className='w-full'
             >
-                <img className="w-full" src={item.hinhAnh} />
+                <img className="lg:w-full" src={item.hinhAnh} />
             </div>
         })
     };
@@ -51,15 +41,15 @@ export default function BannerHomePage() {
         <div className="relative">
             <Slider
                 {...SliderSettings}
-                className='banner-slider-container w-full mt-2'
+                className='banner-slider-container w-full lg:mt-2'
             >
                 {renderCarouselSlider()}
             </Slider>
-            <div className="w-full absolute bottom-8 flex flex-wrap items-center mb-2 p-2 bg-black/50">
-                <h1 className='text-4xl text-white w-11/12 mx-auto my-auto text-center'>
-                    KHÁCH SẠN, KHU NGHỈ DƯỠNG, NHÀ TRỌ & HƠN THẾ NỮA
+            <div className="bg-black/50 flex flex-wrap items-center absolute w-full lg:bottom-8 lg:mb-2 lg:p-2 bottom-3 md:bottom-8">
+                <h1 className='text-white mx-auto my-auto text-center lg:text-4xl lg:w-11/12 w-8/12 text-xs md:w-10/12 md:text-lg'>
+                    KHÁCH SẠN, KHU NGHỈ DƯỠNG, NHÀ TRỌ VÀ HƠN THẾ NỮA
                 </h1>
-                <h2 className='text-xl text-white w-11/12 mx-auto my-auto text-center'>
+                <h2 className='text-white mx-auto my-auto text-center lg:text-xl lg:w-11/12 w-full text-xs font-thin md:text-sm'>
                     Nhận giá tốt nhất cho hơn 10.000 chỗ nghỉ toàn Việt Nam
                 </h2>
             </div>

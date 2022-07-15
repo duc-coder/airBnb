@@ -1,0 +1,90 @@
+@tailwind components;
+
+@layer components {
+    .search-form-main {
+        .ant-tabs-nav::before {
+            @apply border-transparent;
+        };
+        .ant-tabs-tab {
+            .ant-tabs-tab-btn {
+                @apply text-lg;
+                @apply text-rose-500;
+                &:hover {
+                    @apply text-rose-300;
+                };
+            };
+        };
+        .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+            @apply text-rose-500;
+        };
+        .ant-tabs-ink-bar {
+            @apply bg-rose-500;
+        };
+        .search-bar-inner {
+            .input-block-active {};
+            .location-input-block {
+                &::after {
+                    @apply bg-red-400 shadow-lg;
+                };
+                &:hover {
+                    @apply lg:bg-gray-200;
+                    @apply md:bg-gray-200;
+                };
+                .location-input-name {};
+                .location-input {};
+            };
+            .date-input-block{
+                .date-input-item {
+                    .date-input-name {};
+                };
+                .ant-picker-focused {
+                    @apply shadow-none;
+                };
+                .date-picker-container {
+                    @apply w-full z-10;
+                    @apply lg:h-16 md:h-16;
+                    @apply lg:absolute lg:bottom-0;
+                    @apply md:absolute md:bottom-0;
+                    @apply bg-transparent outline-none border-none;
+                    @apply cursor-pointer;
+                    input {
+                        @apply border-solid border border-gray-200 rounded-full mx-2 h-12 w-full text-center cursor-pointer;
+                        @apply lg:h-16 lg:rounded-full lg:pt-9 lg:border-none lg:mx-0;
+                        @apply md:h-16 md:rounded-full md:pt-7 md:border-none md:mx-0;
+                        &:hover {
+                            @apply lg:bg-gray-200;
+                            @apply md:bg-gray-200;
+                        };
+                        &::placeholder {
+                            
+                        };
+                    };
+                    .ant-picker-suffix {
+                        @apply hidden;
+                    };
+                    .ant-picker-range-separator {
+                        @apply hidden;
+                    };
+                    .ant-picker-active-bar {
+                        @apply hidden;
+                    };
+                };
+            };
+        };
+    };
+    
+    .ant-popover-inner {
+        .ant-popover-inner-content {
+            .ant-menu {
+                .ant-menu-item {
+                    .-title-content {
+                        a:hover {
+                            @apply text-black;
+                        };
+                    };
+                };
+            };
+        };
+    };
+    
+};
