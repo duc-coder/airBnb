@@ -1,8 +1,8 @@
 import axios from "axios";
 import { localStorageService } from "./localService";
 
-export const BASE_URL = process.env.REACT_APP_API_BASE_URL;
-export const TOKEN_CYBERSOFT = process.env.REACT_APP_CYBERSOFT_TOKEN;
+export const BASE_URL = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCAyMSIsIkhldEhhblN0cmluZyI6IjA1LzEyLzIwMjIiLCJIZXRIYW5UaW1lIjoiMTY3MDE5ODQwMDAwMCIsIm5iZiI6MTY0MTkyMDQwMCwiZXhwIjoxNjcwMzQ2MDAwfQ.kdBVHpDWKZ-X7NZhWx-Y-ILozaT3RsvaQQF-Yqk4uV4' //process.env.REACT_APP_API_BASE_URL;
+export const TOKEN_CYBERSOFT = "https://airbnb.cybersoft.edu.vn"; //process.env.REACT_APP_CYBERSOFT_TOKEN;
 let timeRequestMax;
 
 const getAccessToken = () => {
