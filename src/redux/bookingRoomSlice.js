@@ -34,23 +34,23 @@ if (searchValues !== null) { // localStorage đã nhận được value từ ng�
         },
         customerInfo: [ //Quy định phân loại khách
             {
-                CustomerType: "Người lớn",
-                Description: "Từ 13 tuổi trở lên",
+                customerType: "Người lớn",
+                description: "Từ 13 tuổi trở lên",
                 quantity: 0,
             },
             {
-                CustomerType: "Trẻ em",
-                Description: "Độ tuổi 2 - 12",
+                customerType: "Trẻ em",
+                description: "Độ tuổi 2 - 12",
                 quantity: 0,
             },
             {
-                CustomerType: "Em bé",
-                Description: "Dưới 2 tuổi",
+                customerType: "Em bé",
+                description: "Dưới 2 tuổi",
                 quantity: 0,
             },
             {
-                CustomerType: "Thú cưng",
-                Description: "Mang theo động vật cần được phục vụ?",
+                customerType: "Thú cưng",
+                description: "Mang theo động vật cần được phục vụ?",
                 quantity: 0,
             },
         ],
